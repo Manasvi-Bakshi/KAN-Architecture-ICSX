@@ -1,9 +1,9 @@
 # KAN-Architecture-ICSX
-# ICSX Network Traffic Classification with Machine Learning & KAN
+## ICSX Network Traffic Classification with Machine Learning & KAN
 
 This project focuses on classifying encrypted network traffic data using traditional machine learning models and a Kolmogorov-Arnold Network (KAN). It is based on the ICSX Dataset (Time-Based Features) and aims to identify darkweb traffic types in a controlled environments with high accuracy and interpretability.
 
-##  Dataset
+###  Dataset
 
 - Source: [ISCX 2016 VPN-nonVPN dataset](https://www.unb.ca/cic/datasets/vpn.html)
 - File Used: `TimeBasedFeatures-Dataset-15s-AllinOne.arff`
@@ -21,7 +21,7 @@ I have tested the code with other respective files as well it should work fine, 
 
 [KAN (Kolmogorov-Arnold Network)](https://github.com/KindXiaoming/pykan) is a novel architecture designed to learn nonlinear mappings with high interpretability. In this project, KAN was trained using `LBFGS` optimizer and outperformed many classical models in generalization on the ICSX dataset.
 
-## ML Models Used
+### Machine Learning Models Used
 
 - Logistic Regression
 - Random Forest
@@ -31,7 +31,7 @@ I have tested the code with other respective files as well it should work fine, 
 
 Each model was trained on the same preprocessed dataset, with performance evaluated on both training and testing splits using accuracy.
 
-## Model Evaluation
+### Model Evaluation
 
 | Model                  | Training Acc | Testing Acc | Overfitting Gap |
 |------------------------|--------------|-------------|------------------|
@@ -44,7 +44,7 @@ Each model was trained on the same preprocessed dataset, with performance evalua
 
 
 
-### How to Run This Project On Google Colab:
+#### How to Run This Project On Google Colab:
 1. Upload the dataset `.arff` file to your Colab environment.
 2. Run the notebook cells in order.
 3. Install KAN via:
